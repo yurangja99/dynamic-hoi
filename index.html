@@ -18,14 +18,14 @@
   <meta property="og:title" content="Dynamic Full-body Motion Agent with Object Interaction via Blending Pre-trained Modular Controllers">
   <meta property="og:description" content="A novel two-stage framework for dynamic human-object interaction (HOI) that blends pretrained modular controllers for physically plausible, contact-rich motion generation in physics simulation.">
   <!-- TODO_URLS: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:url" content="https://yurangja99.github.io/dynamic-hoi-webpage/">
   <!-- TODO_MEDIA: Create a 1200x630px preview image and update path -->
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Dynamic Full-body Motion Agent with Object Interaction - Research Preview">
   <!-- TODO_DATE: Update with actual publication/submission date -->
-  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
+  <meta property="article:published_time" content="2026-06-03T00:00:00.000Z">
   <meta property="article:author" content="Sanghyeok Nam">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="human-object interaction">
@@ -191,7 +191,7 @@
             <h1 class="title is-1 publication-title">Dynamic Full-body Motion Agent with Object Interaction via Blending Pre-trained Modular Controllers</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="www.linkedin.com/in/sanghyeok-nam-a05461391" target="_blank">Sanghyeok Nam</a><sup>*</sup>,</span>
+                <a href="https://www.linkedin.com/in/sanghyeok-nam-a05461391" target="_blank">Sanghyeok Nam</a><sup>*</sup>,</span>
                 <span class="author-block">
                   <!-- TODO_URLS: Replace personal links with actual homepages -->
                   <a href="https://braian98.github.io" target="_blank">Byoungjun Kim</a><sup>*</sup>,</span>
@@ -255,10 +255,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO_MEDIA: Replace with your teaser video (place file in static/videos/) -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
+      <img src="static/images/teaser.png" alt="Our framework blends pretrained experts from distinct motion domains—a dynamic whole-body agent (PHC) and a contact-aware HOI agent (InterMimic)—enabling dynamic and contact-rich human-object interaction (HOI) generation and imitation in physics simulation. Across diverse motion styles (run, jump, kick, dance) and HOI categories, the composer demonstrates versatility and robustness while maintaining training efficiency." loading="lazy"/>
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+        <source src="static/images/teaser.png" type="video/mp4">
+      </video> -->
       <h2 class="subtitle has-text-centered">
         Our framework blends pretrained experts from distinct motion domains—a dynamic whole-body agent (PHC) and a contact-aware HOI agent (InterMimic)—enabling dynamic and contact-rich human-object interaction (HOI) generation and imitation in physics simulation. Across diverse motion styles (run, jump, kick, dance) and HOI categories, the composer demonstrates versatility and robustness while maintaining training efficiency.
       </h2>
@@ -294,28 +294,21 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- TODO_MEDIA: Replace with your result images (place in static/images/) -->
-        <img src="static/images/carousel1.jpg" alt="Overall framework: Dynamic HOI Planning and Composer-based HOI Execution" loading="lazy"/>
+        <img src="static/images/overall.png" alt="Overall framework: Dynamic HOI Planning and Composer-based HOI Execution" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Overall Framework: Dynamic HOI Planning (left) generates human and object motion sequences from a text prompt. Composer-based HOI Execution (right) imitates these plans in a physics simulator by blending two pretrained experts.
+          <b>>Overall Framework</b> Dynamic HOI Planning (left) generates human and object motion sequences from a text prompt. Composer-based HOI Execution (right) imitates these plans in a physics simulator by blending two pretrained experts.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel2.jpg" alt="Dynamic HOI Planning: inpainting strategy with MDM and FullBodyManip priors" loading="lazy"/>
+        <img src="static/images/stage1.png" style="max-height: 500px; width: auto;" alt="Dynamic HOI Planning" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Dynamic HOI Planning. We sample human motions with MDM and inject HOI motion prior during diffusion sampling: full-body injection before interaction onset and interaction-related joints after onset.
+          <b>Dynamic HOI Planning.</b> We sample human motions with MDM and inject HOI motion prior during diffusion sampling: full-body injection before interaction onset and interaction-related joints after onset.
         </h2>
       </div>
       <div class="item">
-        <img src="static/images/carousel3.jpg" alt="Composer-based HOI Execution: per-DoF spatio-temporal blending of PHC and InterMimic" loading="lazy"/>
+        <img src="static/images/stage2.png" style="max-height: 500px; width: auto;" alt="Composer-based HOI Execution" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-          Composer-based HOI Execution. A lightweight eigenbasis composer blends actions from PHC (whole-body) and InterMimic (HOI) using per-DoF weights, enabling spatio-temporal compositional control.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel4.jpg" alt="Qualitative comparisons: DAViD vs Ours on dynamic HOI planning" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative Comparisons on Dynamic HOI Planning. Our method (OursP) produces more accurate and temporally consistent hand-object interactions compared to DAViD, benefiting from step-wise alignment.
+          <b>Composer-based HOI Execution.</b> A lightweight eigenbasis composer blends actions from PHC (whole-body) and InterMimic (HOI) using per-DoF weights, enabling spatio-temporal compositional control.
         </h2>
       </div>
   </div>
@@ -329,11 +322,10 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Demo Video</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="publication-video">
-            <!-- TODO_MEDIA: Replace with your YouTube video ID -->
             <iframe src="https://www.youtube.com/embed/EbSkIAGUtqg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -343,28 +335,59 @@
 </section>
 <!-- End youtube video -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Quantitative Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/result1.png" style="max-height: 250px; width: auto;" alt="Quantitative Comparisons on Dynamic HOI Generation." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Quantitative Comparisons on Dynamic HOI Generation.</b> ‘HOI’ shows whether the method generates both human and object motions. ‘Physics’ indicates whether the method exploits physics-based simulation for motion generation.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/result2.png" style="max-height: 250px; width: auto;" alt="Quantitative Comparisons on Dynamic HOI Imitation." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Quantitative Comparisons on Dynamic HOI Imitation.</b> SR denotes the average success rate across five motion styles, evaluated with their respective style-specific goals.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Qualitative Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO_MEDIA: Replace with your result videos (place in static/videos/) -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/qualitative1.png" style="max-height: 600px; width: auto;" alt="Comparisons on Dynamic HOI Planning." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Comparisons on Dynamic HOI Planning.</b> Contacting hands and objects are shown in red. OursP produces more accurate and temporally consistent hand-object interactions compared to DAViD [20], benefiting from our step-wise alignment even without the physics-based execution stage.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/qualitative2.png" style="max-height: 600px; width: auto;" alt="Comparisons on dynamic HOI Imitation." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Comparisons on dynamic HOI Imitation.</b> Reference motion (top row), motion from InterMimicFT (middle row), and motion from Ours (bottom row) for a text prompt “A person jumps, a largetable”. The two visualizations, (a) and (b), compare per-frame alignment and the overall trajectory for distinct references. As shown, our method successfully executes the dynamic jump to follow the reference, whereas InterMimicFT often collapses to a local optimum—short shuffling steps that minimize falling—rather than preserving the dynamic motion style.
+          </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/qualitative3.png" style="max-height: 600px; width: auto;" alt="Qualitative comparisons of prior-blending for HOI planning." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Qualitative comparisons of prior-blending for HOI planning.</b> MDM [49] does not account for object interaction, often failing to establish hand–object contacts. DAViD [20] produces unstable and inconsistent hand–object alignment. In contrast, our planning stage maintains consistent hand–object interaction while preserving the intended motion style.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/qualitative4.png" style="max-height: 600px; width: auto;" alt="Qualitative comparisons of HOI execution." loading="lazy"/>
+          <h2 class="subtitle has-text-centered">
+            <b>Qualitative comparisons of HOI execution.</b> Our method generates more physically plausible and dynamic motions than baseline controllers. During jumps, InterMimicFT approximates the motion through small repetitive stepping patterns, whereas Ours produces an actual two-foot lift-off. During kicks, our foot trajectories reach higher and align more closely with the reference. Frames marked with X indicate early termination due to object drops or robot falls.
+          </h2>
         </div>
       </div>
     </div>
@@ -372,6 +395,153 @@
 </section>
 <!-- End video carousel -->
 
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dynamic HOI Planning</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/planning1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person kicks, clothesstand</b>
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/planning2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person runs, smallbox</b>
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/planning3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person jumps, largetable</b>
+          </h2>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/planning4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person dances, clothesstand</b>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Dynamic HOI Execution</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/execution1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person jumps, clothesstand</b>
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/execution2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person jumps, largetable</b>
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/execution3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person kicks, smallbox</b>
+          </h2>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/execution4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person runs, clothesstand</b>
+          </h2>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/execution5.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>A person dances, clothesstand</b>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">More End-to-end Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/more1.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>Dynamic motions while carrying clothesstand with left hand.</b>
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/more2.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>Dynamic motions while carrying clothesstand with right hand.</b>
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/more3.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>Dynamic motions while carrying largetable.</b>
+          </h2>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/more4.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>Dynamic motions while lifting largetable overhead.</b>
+          </h2>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/more5.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <b>Dynamic motions while carrying smallbox.</b>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
@@ -398,7 +568,6 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <!-- TODO_BIBTEX: Fill in the correct BibTeX key, venue, year, and URL once the paper is accepted/posted -->
       <pre id="bibtex-code"><code>@inproceedings{cvprf2026dynamichoi,
   title={Dynamic Full-body Motion Agent with Object Interaction via Blending Pre-trained Modular Controllers},
   author={Nam, Sanghyeok and Kim, Byoungjun and Park, Daehyung and Kim, Tae-Kyun},

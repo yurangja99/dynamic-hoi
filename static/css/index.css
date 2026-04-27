@@ -256,11 +256,14 @@ body {
 .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
+  max-width: 100%;
 }
 
 .results-carousel .item {
+  text-align: center;
   margin: 1rem;
   overflow: hidden;
+  max-width: 100%;
   padding: 1.5rem;
   font-size: 0;
   background: var(--background-primary);
